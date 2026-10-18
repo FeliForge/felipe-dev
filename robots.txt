@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://felipecostudios.github.io/felipe-dev/sitemap.xml
+Sitemap: https://feliforge.github.io/FeliForge-Studios/sitemap.xml
