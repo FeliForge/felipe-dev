@@ -1,6 +1,6 @@
-# felipe.dev
+# FeliForge Studios
 
-Portfolio de Felipe — sitios y juegos en HTML y JavaScript, **sin anuncios**.
+FeliForge Studios — sitios y juegos en HTML y JavaScript, **sin anuncios**.
 
 Sitio estático listo para [GitHub Pages](https://pages.github.com/).
 
@@ -18,7 +18,7 @@ npx serve .
 2. Source: **Deploy from a branch**
 3. Branch: `main` / carpeta `/` (root)
 4. Save. En unos minutos queda en:
-   `https://felipecostudios.github.io/felipe-dev/`
+   `https://feliforge.github.io/FeliForge-Studios/`
 
 ## Editar proyectos
 
