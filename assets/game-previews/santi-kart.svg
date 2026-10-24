@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0b1020"/>
+  <path d="M-20 430C140 300 260 360 400 250S640 80 840 160" fill="none" stroke="#1e293b" stroke-width="90" stroke-linecap="round"/>
+  <path d="M-20 430C140 300 260 360 400 250S640 80 840 160" fill="none" stroke="#7cf6e4" stroke-width="6" stroke-dasharray="16 18"/>
+  <g transform="translate(430 230) rotate(-28)">
+    <rect x="-46" y="-16" width="92" height="36" rx="10" fill="#ff4d6d"/>
+    <rect x="28" y="-10" width="22" height="20" rx="4" fill="#f4f6fb"/>
+    <circle cx="-28" cy="22" r="10" fill="#111827"/>
+    <circle cx="24" cy="22" r="10" fill="#111827"/>
+    <circle cx="-28" cy="-20" r="10" fill="#111827"/>
+    <circle cx="24" cy="-20" r="10" fill="#111827"/>
+  </g>
+  <circle cx="690" cy="150" r="58" fill="#f3d27a" opacity=".9"/>
+  <text x="48" y="78" fill="#f4f6fb" font-family="monospace" font-size="46" font-weight="700">SANTI KART</text>
+  <text x="50" y="116" fill="#f3d27a" font-family="monospace" font-size="18">RACING</text>
+</svg>

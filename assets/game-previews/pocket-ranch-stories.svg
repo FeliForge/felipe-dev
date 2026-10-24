@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#12324a"/><stop offset="1" stop-color="#0c1812"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="640" cy="110" r="48" fill="#f3d27a"/>
+  <path d="M0 280c120-70 180-20 300 10s180-80 280-20 140 30 220-10v240H0Z" fill="#1d3b2a"/>
+  <path d="M0 360c140-40 220 20 360 10s180-50 440 20v110H0Z" fill="#24543a"/>
+  <rect x="330" y="210" width="150" height="110" fill="#8b4518"/>
+  <polygon points="310,210 405,140 500,210" fill="#c2410c"/>
+  <rect x="385" y="250" width="40" height="70" fill="#1a120c"/>
+  <circle cx="180" cy="330" r="18" fill="#f4f6fb"/>
+  <rect x="164" y="348" width="32" height="28" rx="6" fill="#7cf6e4"/>
+  <text x="48" y="78" fill="#f4f6fb" font-family="monospace" font-size="38" font-weight="700">POCKET RANCH STORIES</text>
+  <text x="50" y="116" fill="#7cf6e4" font-family="monospace" font-size="18">ADVENTURE</text>
+</svg>

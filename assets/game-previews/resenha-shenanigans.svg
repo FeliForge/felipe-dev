@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a0b12"/><stop offset="1" stop-color="#090b10"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#ff4d6d"/><stop offset="1" stop-color="#ffb086"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="250" cy="250" r="150" fill="#ff4d6d" opacity=".16"/>
+  <circle cx="540" cy="230" r="120" fill="#7cf6e4" opacity=".1"/>
+  <rect x="70" y="330" width="660" height="14" rx="7" fill="#241018"/>
+  <path d="M210 340c20-90 40-140 70-150 18 40 8 110-10 150" fill="#ff4d6d"/>
+  <path d="M560 340c-16-100-48-150-78-140-10 48 8 100 18 140" fill="#7cf6e4"/>
+  <circle cx="268" cy="168" r="22" fill="#f4f6fb"/>
+  <circle cx="500" cy="168" r="22" fill="#f4f6fb"/>
+  <path d="M300 210h70l18 28-40 18z" fill="url(#glow)"/>
+  <text x="48" y="78" fill="#f4f6fb" font-family="monospace" font-size="40" font-weight="700">RESENHA SHENANIGANS</text>
+  <text x="50" y="116" fill="#ffb086" font-family="monospace" font-size="18">FIGHTING / ACTION</text>
+</svg>

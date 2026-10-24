@@ -1,6 +1,10 @@
 const PIX_KEY = "018.249.148-06";
 
 const PROJECTS = [
+  { kind: "game", url: "https://resenhashenanigans.base44.app", host: "base44.app", tags: ["HTML", "JS", "Lucha"], name: { es: "Resenha Shenanigans", pt: "Resenha Shenanigans", en: "Resenha Shenanigans" }, blurb: { es: "Juego de lucha rápido: combos, poderes y rounds caóticos.", pt: "Jogo de luta rápido: combos, poderes e rounds caóticos.", en: "A fast fighting game: combos, powers and chaotic rounds." } },
+  { kind: "game", url: "https://pocketranch.base44.app", host: "base44.app", tags: ["HTML", "JS", "Aventura"], name: { es: "Pocket Ranch Stories", pt: "Pocket Ranch Stories", en: "Pocket Ranch Stories" }, blurb: { es: "Aventura en un rancho de bolsillo: historias, exploración y personajes.", pt: "Aventura em um rancho de bolso: histórias, exploração e personagens.", en: "A pocket ranch adventure: stories, exploration and characters." } },
+  { kind: "game", url: "https://tango-slime-siege.vercel.app/", host: "vercel.app", tags: ["Three.js", "Vite", "TD"], name: { es: "Tango Slime Siege", pt: "Tango Slime Siege", en: "Tango Slime Siege" }, blurb: { es: "Tower defense: coloca torres y frena oleadas de slimes.", pt: "Tower defense: posicione torres e pare ondas de slimes.", en: "Tower defense: place towers and stop waves of slimes." } },
+  { kind: "game", url: "https://unregaloamihermano-umber.vercel.app/", host: "vercel.app", tags: ["JS", "Racing"], name: { es: "Santi Kart", pt: "Santi Kart", en: "Santi Kart" }, blurb: { es: "Carreras arcade: derrapes, ítems y vueltas contra el reloj.", pt: "Corridas arcade: derrapagens, itens e voltas contra o relógio.", en: "Arcade racing: drifts, items and laps against the clock." } },
   { kind: "game", url: "https://14yearoldcoding.neocities.org/", host: "neocities.org", tags: ["HTML", "JS", "Arcade"], name: { es: "Supra Meirro", pt: "Supra Meirro", en: "Supra Meirro" }, blurb: { es: "Arcade de plataformas clásico. Primeros niveles publicados en Neocities.", pt: "Arcade de plataformas clássico. Primeiros níveis publicados no Neocities.", en: "Classic platform arcade. Early levels published on Neocities." } },
   { kind: "game", url: "https://the6warriors.netlify.app/", host: "netlify.app", tags: ["HTML", "JS", "Survival"], name: { es: "The 6 Warriors", pt: "The 6 Warriors", en: "The 6 Warriors" }, blurb: { es: "Supervivencia con seis guerreros, oleadas, bosses, XP y habilidades.", pt: "Sobrevivência com seis guerreiros, ondas, chefes, XP e habilidades.", en: "Survival with six warriors, waves, bosses, XP and abilities." } },
   { kind: "game", url: "https://goofyboxies.netlify.app/", host: "netlify.app", tags: ["HTML", "JS", "Collector"], name: { es: "Goofy Boxes", pt: "Goofy Boxes", en: "Goofy Boxes" }, blurb: { es: "Abre cajas, colecciona fandoms, sube de nivel y desbloquea logros.", pt: "Abra caixas, colecione fandoms, suba de nível e desbloqueie conquistas.", en: "Open boxes, collect fandoms, level up and unlock achievements." } },
@@ -12,13 +16,15 @@ const PROJECTS = [
   { kind: "game", url: "https://mostra9c2026.netlify.app/", host: "netlify.app", tags: ["HTML", "Canvas", "Sports"], name: { es: "Resenha Fut 9C", pt: "Resenha Fut 9C", en: "Resenha Fut 9C" }, blurb: { es: "Fútbol arcade caótico: vs IA, cooperativo local e ítems locos.", pt: "Futebol arcade caótico: vs IA, cooperativo local e itens malucos.", en: "Chaotic arcade football: vs AI, local co-op and wild items." } },
   { kind: "game", url: "https://feliforge.github.io/NeonBossRush/", host: "github.io", tags: ["Three.js", "JS", "3D"], name: { es: "Neon Boss Rush", pt: "Neon Boss Rush", en: "Neon Boss Rush" }, blurb: { es: "Boss rush 3D con Three.js: cinco jefes, cuatro héroes y power-ups.", pt: "Boss rush 3D com Three.js: cinco chefes, quatro heróis e power-ups.", en: "3D boss rush with Three.js: five bosses, four heroes, power-ups." } },
   { kind: "code", url: "https://github.com/FeliForge", host: "github.com", tags: ["Git", "Open source"], name: { es: "FeliForge Studios", pt: "FeliForge Studios", en: "FeliForge Studios" }, blurb: { es: "Perfil de GitHub con el código abierto de los juegos y sitios.", pt: "Perfil no GitHub com o código aberto dos jogos e sites.", en: "GitHub profile with the open source for the games and sites." } },
-  { kind: "site", url: "https://github.com/FeliForge/FeliForge-Studios", host: "github.com", tags: ["HTML", "CSS", "JS"], name: { es: "FeliForge Studios", pt: "FeliForge Studios", en: "FeliForge Studios" }, blurb: { es: "Este portfolio: editor, 12 proyectos, donaciones PIX y sin anuncios.", pt: "Este portfólio: editor, 12 projetos, doações PIX e sem anúncios.", en: "This portfolio: editor UI, 12 projects, PIX tips, no ads." } },
+  { kind: "site", url: "https://github.com/FeliForge/felipe-dev", host: "github.com", tags: ["HTML", "CSS", "JS"], name: { es: "FeliForge Studios", pt: "FeliForge Studios", en: "FeliForge Studios" }, blurb: { es: "Este portfolio: editor, juegos nuevos, donaciones PIX y sin anuncios.", pt: "Este portfólio: editor, jogos novos, doações PIX e sem anúncios.", en: "This portfolio: editor UI, new games, PIX tips, no ads." } },
 ];
 
 const SKILLS = [
-  { mod: "HTML5", level: 4, comment: { es: "estructura y semántica", pt: "estrutura e semântica", en: "structure and semantics" } },
+  { mod: "HTML5", level: 5, comment: { es: "estructura y semántica", pt: "estrutura e semântica", en: "structure and semantics" } },
+  { mod: "JavaScript", level: 5, comment: { es: "interactividad, DOM, lógica", pt: "interatividade, DOM, lógica", en: "interactivity, DOM, logic" } },
+  { mod: "Three.js", level: 3, comment: { es: "escenas y juegos 3D", pt: "cenas e jogos 3D", en: "scenes and 3D games" } },
+  { mod: "Vite", level: 4, comment: { es: "build y servidor de desarrollo", pt: "build e servidor de desenvolvimento", en: "build and dev server" } },
   { mod: "CSS", level: 3, comment: { es: "diseño y estilos", pt: "design e estilos", en: "layout and style" } },
-  { mod: "JavaScript", level: 4, comment: { es: "interactividad, DOM, lógica", pt: "interatividade, DOM, lógica", en: "interactivity, DOM, logic" } },
   { mod: "Git", level: 2, comment: { es: "control de versiones", pt: "controle de versão", en: "version control" } },
   { mod: "UX-UI", level: 3, comment: { es: "experiencia sin anuncios ni ruido", pt: "experiência sem anúncios nem ruído", en: "experience without ads or noise" } },
 ];
@@ -26,7 +32,7 @@ const SKILLS = [
 const COPY = {
   es: {
     comment: "perfil de desarrollador",
-    tagline: 'Tengo 14 años y aprendo a programar sitios y aplicaciones web con <strong>HTML</strong> y <strong>JavaScript</strong>. Mi meta es construir proyectos <strong>sin anuncios</strong> que se sostengan solos y, con el tiempo, convertirme en un desarrollador de apps reconocido.',
+    tagline: 'Tengo 14 años y aprendo a programar sitios y juegos web con <strong>HTML</strong>, <strong>JavaScript</strong>, <strong>Three.js</strong> y <strong>Vite</strong>. Mi meta es construir proyectos <strong>sin anuncios</strong> que se sostengan solos y, con el tiempo, convertirme en un desarrollador de apps reconocido.',
     ctaP: "Ver proyectos", ctaD: "Donar",
     sitios: "sitios", sobre: "sobre-mi", skills: "habilidades", goals: "objetivos", donate: "donaciones",
     filters: { all: "todos", game: "juegos", site: "sitios", code: "código" },
@@ -47,7 +53,7 @@ const COPY = {
   },
   pt: {
     comment: "perfil de desenvolvedor",
-    tagline: 'Tenho 14 anos e estou aprendendo a programar sites e aplicativos web com <strong>HTML</strong> e <strong>JavaScript</strong>. Minha meta é construir projetos <strong>sem anúncios</strong> que se sustentem sozinhos e, com o tempo, me tornar um desenvolvedor de apps reconhecido.',
+    tagline: 'Tenho 14 anos e estou aprendendo a programar sites e jogos web com <strong>HTML</strong>, <strong>JavaScript</strong>, <strong>Three.js</strong> e <strong>Vite</strong>. Minha meta é construir projetos <strong>sem anúncios</strong> que se sustentem sozinhos e, com o tempo, me tornar um desenvolvedor de apps reconhecido.',
     ctaP: "Ver projetos", ctaD: "Doar",
     sitios: "projetos", sobre: "sobre-mim", skills: "habilidades", goals: "objetivos", donate: "doacoes",
     filters: { all: "todos", game: "jogos", site: "sites", code: "código" },
@@ -68,7 +74,7 @@ const COPY = {
   },
   en: {
     comment: "developer profile",
-    tagline: "I'm 14 and I'm learning to build websites and web apps with <strong>HTML</strong> and <strong>JavaScript</strong>. My goal is to ship <strong>ad-free</strong> projects that can stand on their own — and, in time, become a recognized app developer.",
+    tagline: "I'm 14 and I'm learning to build websites and games with <strong>HTML</strong>, <strong>JavaScript</strong>, <strong>Three.js</strong> and <strong>Vite</strong>. My goal is to ship <strong>ad-free</strong> projects that can stand on their own — and, in time, become a recognized app developer.",
     ctaP: "See projects", ctaD: "Donate",
     sitios: "sites", sobre: "about", skills: "skills", goals: "goals", donate: "donate",
     filters: { all: "all", game: "games", site: "sites", code: "code" },
@@ -126,8 +132,8 @@ function render(langId) {
     .join("");
 
   document.getElementById("skills").innerHTML = SKILLS.map((s) => {
-    const bars = Array.from({ length: 5 }, (_, i) => `<span class="${i < s.level ? "on" : ""}"></span>`).join("");
-    return `<div class="imp"><span class="kw">import</span> <span class="str">${s.mod}</span> <span class="from">// ${s.comment[lang]}</span><div class="lvl">${bars}</div></div>`;
+    const stars = Array.from({ length: 5 }, (_, i) => `<span class="star${i < s.level ? " on" : ""}">★</span>`).join("");
+    return `<div class="imp"><span class="kw">import</span> <span class="str">${s.mod}</span> <span class="from">// ${s.comment[lang]}</span><div class="lvl" aria-label="${s.level}/5">${stars}</div></div>`;
   }).join("");
 
   document.getElementById("roadmap").innerHTML = t.roadmap.map((step) => `

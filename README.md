@@ -22,7 +22,7 @@ npx serve .
 
 ## Editar proyectos
 
-Los 12 links viven en el array `PROJECTS` de [`app.js`](app.js).  
+Los links viven en el array `PROJECTS` de [`app.js`](app.js) y los juegos del directorio en [`games-config.js`](games-config.js).  
 Agregá, sacá o cambiá un objeto y recargá.
 
 Donaciones PIX: QRs en `qr/` y clave en `PIX_KEY` (mismo archivo).

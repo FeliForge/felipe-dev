@@ -11,13 +11,14 @@ const DISCOVER_COPY = {
 let discoverLang = localStorage.getItem("felipe-lang") || "es";
 let discoverFilter = "all";
 let discoverSearch = "";
-const DISCOVER_CATEGORIES = ["all", "action", "arcade", "sports", "casual", "other"];
+const DISCOVER_CATEGORIES = ["all", "action", "fighting", "racing", "strategy", "adventure", "arcade", "sports", "casual", "other"];
+const KNOWN_CATEGORIES = ["action", "fighting", "racing", "strategy", "adventure", "arcade", "sports", "casual", "defense", "story"];
 
 function textFor(game, lang) { return game[lang] || game.en || game.es || ""; }
 function categoryMatch(game, category) {
   if (category === "all") return true;
   const values = [String(game.genre || ""), ...(game.tags || [])].map(v => v.toLowerCase());
-  if (category === "other") return !values.some(v => ["action", "arcade", "sports", "casual"].includes(v));
+  if (category === "other") return !values.some(v => KNOWN_CATEGORIES.includes(v));
   return values.includes(category);
 }
 function gameMatchesSearch(game, query, lang) {
