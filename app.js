@@ -15,8 +15,6 @@ const PROJECTS = [
   { kind: "game", url: "https://vitalsmash.netlify.app", host: "netlify.app", tags: ["HTML", "Canvas", "Multi"], name: { es: "Vital Smash 4P", pt: "Vital Smash 4P", en: "Vital Smash 4P" }, blurb: { es: "Vital Smash para hasta cuatro jugadores en la misma partida.", pt: "Vital Smash para até quatro jogadores na mesma partida.", en: "Vital Smash for up to four players in one session." } },
   { kind: "game", url: "https://mostra9c2026.netlify.app/", host: "netlify.app", tags: ["HTML", "Canvas", "Sports"], name: { es: "Resenha Fut 9C", pt: "Resenha Fut 9C", en: "Resenha Fut 9C" }, blurb: { es: "Fútbol arcade caótico: vs IA, cooperativo local e ítems locos.", pt: "Futebol arcade caótico: vs IA, cooperativo local e itens malucos.", en: "Chaotic arcade football: vs AI, local co-op and wild items." } },
   { kind: "game", url: "https://feliforge.github.io/NeonBossRush/", host: "github.io", tags: ["Three.js", "JS", "3D"], name: { es: "Neon Boss Rush", pt: "Neon Boss Rush", en: "Neon Boss Rush" }, blurb: { es: "Boss rush 3D con Three.js: cinco jefes, cuatro héroes y power-ups.", pt: "Boss rush 3D com Three.js: cinco chefes, quatro heróis e power-ups.", en: "3D boss rush with Three.js: five bosses, four heroes, power-ups." } },
-  { kind: "code", url: "https://github.com/FeliForge", host: "github.com", tags: ["Git", "Open source"], name: { es: "FeliForge Studios", pt: "FeliForge Studios", en: "FeliForge Studios" }, blurb: { es: "Perfil de GitHub con el código abierto de los juegos y sitios.", pt: "Perfil no GitHub com o código aberto dos jogos e sites.", en: "GitHub profile with the open source for the games and sites." } },
-  { kind: "site", url: "https://github.com/FeliForge/felipe-dev", host: "github.com", tags: ["HTML", "CSS", "JS"], name: { es: "FeliForge Studios", pt: "FeliForge Studios", en: "FeliForge Studios" }, blurb: { es: "Este portfolio: editor, juegos nuevos, donaciones PIX y sin anuncios.", pt: "Este portfólio: editor, jogos novos, doações PIX e sem anúncios.", en: "This portfolio: editor UI, new games, PIX tips, no ads." } },
 ];
 
 const SKILLS = [
@@ -127,7 +125,8 @@ function render(langId) {
   document.getElementById("copyPix").textContent = t.pixCopy;
   document.getElementById("footer").textContent = t.footer;
 
-  document.getElementById("filters").innerHTML = ["all", "game", "site", "code"]
+  const kinds = ["all", "game", "site", "code"].filter((k) => k === "all" || PROJECTS.some((p) => p.kind === k));
+  document.getElementById("filters").innerHTML = kinds
     .map((k) => `<button class="chip${filter === k ? " active" : ""}" data-filter="${k}">${t.filters[k]}</button>`)
     .join("");
 
