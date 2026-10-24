@@ -18,7 +18,7 @@ npx serve .
 2. Source: **Deploy from a branch**
 3. Branch: `main` / carpeta `/` (root)
 4. Save. En unos minutos queda en:
-   `https://feliforge.github.io/FeliForge-Studios/`
+   `https://feliforge.github.io/felipe-dev/`
 
 ## Editar proyectos
 

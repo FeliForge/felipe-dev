@@ -132,7 +132,7 @@ function render(langId) {
     .join("");
 
   document.getElementById("skills").innerHTML = SKILLS.map((s) => {
-    const stars = Array.from({ length: 5 }, (_, i) => `<span class="star${i < s.level ? " on" : ""}">★</span>`).join("");
+    const stars = Array.from({ length: 5 }, (_, i) => `<span class="star${i < s.level ? " on" : ""}">${i < s.level ? "★" : "☆"}</span>`).join("");
     return `<div class="imp"><span class="kw">import</span> <span class="str">${s.mod}</span> <span class="from">// ${s.comment[lang]}</span><div class="lvl" aria-label="${s.level}/5">${stars}</div></div>`;
   }).join("");
 

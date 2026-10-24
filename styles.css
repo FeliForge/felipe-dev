@@ -34,7 +34,7 @@ h1.name{font-size:clamp(2.6rem,6vw,4.4rem);letter-spacing:-.05em}
 .chip.active{background:rgba(124,246,228,.12);color:var(--accent);border-color:rgba(124,246,228,.45)}
 .site-link:hover,.game-card:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 22px 40px -24px rgba(124,246,228,.4)}
 .lvl{gap:2px}
-.lvl span.star{width:auto;height:auto;background:none;color:rgba(255,255,255,.18);font-size:16px;line-height:1}
+.lvl span.star{width:auto;height:auto;background:none;color:rgba(255,255,255,.38);font-size:16px;line-height:1}
 .lvl span.star.on{background:none;color:#f5c451;text-shadow:0 0 10px rgba(245,196,81,.5)}
 .imp .str{font-weight:600}
 @media(max-width:470px){.discover-filters .chip{flex:0 1 auto}}
